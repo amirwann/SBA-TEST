@@ -1,0 +1,18 @@
+def printCubes(a, b) :
+
+    for i in range(a, b + 1) :
+         
+        # Check if current number 'i'
+        # is perfect cube
+        j = 1
+        for j in range(j ** 3, i + 1 ) :
+             
+            if (j ** 3 == i) :
+                print( j ** 3, end = " ")
+                break
+             
+ 
+ 
+a = 1; b = 10000
+print("Perfect cubes in given range: ")
+printCubes(a, b)
